@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #ff0000; /* Red color similar to YouTube's header */
+            padding: 10px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .subscribe-button {
+            background-color: #ff0000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .subscribe-button:hover {
+            background-color: #cc0000;
+        }
+        .search-bar {
+        
+            padding: 6px 8px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            font-size: 15px;
+            width: 420px;
+            box-sizing: border-box;
+        }
+        
+    </style>
+</head>
+<body>
+    
+        <a href="https://www.youtube.com/" target="_blank" style="text-align: center;">
+            <img src="https://www.youtube.com/img/desktop/yt_1200.png" style="width: 85px;" alt="YouTube Logo">
+        </a>
+        <br><br>
+     
+        <div class="search-bar"> 
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height: 20px; width: 20px"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+
+               <i class="fa-solid fa-bars"></i>         
+                <input type="text" name="search" placeholder="Search videos...">
+                <br><br>
+                <!-- <input type="submit" value="Search" placeholder="Search..."> -->         
+        </div>
+        <!-- <button id="playButton" onclick="playVideo()" >Play</button> -->
+        <iframe id="videoplay" width="560" height="315" src="https://www.youtube.com/embed/FYErehuSuuw" frameborder="0" allowfullscreen>
+        </iframe>
+        <h3><b>Mastering HTML Basics and Beyond | 
+        Your Ultimate Guide to Begin Web Development 💻 in Tamil | 
+        EMC</b></h3>
+       <br><button id="playButton" onclick="playVideo()" >Play</button>
+        <button class="subscribe-button" onclick="openForm()">Subscribe</button>
+        <h3>38,65,587 views Jun 14, 2019</h3>
+        <p>Why This Video is Perfect for You:</p>
+            <p>Whether you're a coding novice or aiming to strengthen your web development skills, this tutorial is designed with your success in mind.</p>
+            <p>Our step-by-step explanations, real-world examples, and practical insights ensure that you gain the confidence to tackle HTML projects head-on.</p> 
+            <p>By the end, you'll have a deep understanding of HTML's foundational concepts and practical applications, </p>
+            <p>setting you on the path to a successful career in web development.</p>
+    </main>
+    <script>
+        function openForm() {
+            window.open("YoutubeClone.html", "_blank");
+        }
+    </script>
+</body>
+</html>
